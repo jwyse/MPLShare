@@ -33,6 +33,18 @@ planned
 :hourglass:
 -->
 
+## Proof of Concept
+Ultimately, this project will be a web application, where users can search for presets or upload their own.  At this stage, I'm focused on the data parsing and storage, and testing that using a console.
+
+Parsing a preset from .mo file
+![display single preset](https://github.com/jwyse/MPLShare/raw/master/img/poc-display-preset.png)
+
+Searching presets by preamp model (using Mooer's nickname, or the actual Based-On name)
+![search](https://github.com/jwyse/MPLShare/raw/master/img/poc-search.png)
+
+Parsing individual presets from full backup (.mbf) files
+![Full backup](https://github.com/jwyse/MPLShare/raw/master/img/poc-parsed-full-backup.png)
+
 ### Disclaimer
 I am not affiliated with Mooer in any way, except that I've purchased a few of their products via normal retail.
 
