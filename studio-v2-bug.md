@@ -10,18 +10,18 @@ I don't know.  Other users have reported the same issue, and I have found only *
 
 ## Do I have this issue?
 Here's how you can check whether your MPL pedal/software has this issue:
-* Capture a tone with your Preamp Live, or import someone else's preset file that contains a Tone Capture. (It doesn't seem to matter *how* the Tone Capture gets into your MPL pedal.)
-* Verify that the Tone Capture exists: [img/tone-captured.png]
-* Export the tone to your computer using Studio's `Library`
-* Use a [hex editor](https://www.onlinehexeditor.com) to view the exported `.mo` file.
-* Confirm whether there is data starting at offset 0x800 (hex; 2048 in decimal). [img/preset-with-tc.png]
+1. Capture a tone with your Preamp Live, or import someone else's preset file that contains a Tone Capture. (It doesn't seem to matter *how* the Tone Capture gets into your MPL pedal.)
+2. Verify that the Tone Capture exists: ![Tone Captured](https://github.com/jwyse/MPLShare/raw/master/img/tone-captured.png)
+3. Export the tone to your computer using Studio's `Library` feature.
+4. View the exported `.mo` file with a hex editor like [OnlineHexEditor](https://www.onlinehexeditor.com) (online/no installation).
+5. Look for data starting at offset 0x800 (800 in hex; 2048 if your hex editor displays offsets in decimal). ![Hex data](https://github.com/jwyse/MPLShare/raw/master/img/preset-with-tc.png)
     * If there's non-zero data there, then it DID export your Tone Capture.  I'd appreciate it if you would contact me and let me know what version of the software you're using (v2.0.0? Windows or Mac?), how you got to that version (upgraded from 1.0.0, or from 1.0.1?), and anything else that might help narrow down why this may not affect ALL users.
-    * If that data is all zeroes through the end of the file, then **it did not export your Tone Capture**.
+    * If that data is all zeroes through almost the end of the file (offset 0xFFF / 4095 in decimal), then **it did not export your Tone Capture**. ![Hex data](https://github.com/jwyse/MPLShare/raw/master/img/preset-without-tc.png)
+
+## What should I do if I have this issue?
+Please contact Mooer support, to encourage them to prioritize fixing this issue.
 
 ## How did you find this issue?
 Immediately after I bought my Preamp Live, I upgraded the software+firmware to v1.0.1 (it shipped with v1.0.0), and then v2.0.0.  I captured the tone of my favorite amp, and exported it.  I tried out a few presets that other users had shared, and eventually did a factory reset and tried to restore my own preset with my tone capture... but there was no tone capture.
 
 I downgraded my software+firmware back to v1.0.0 and confirmed that exported presets do contain tone capture data, as expected.  Then I upgraded to 1.0.1 and confirmed that it still works.  Then I upgraded to 2.0.0 and confirmed the bug again.  Other users have reported the same issue in a Facebook group.
-
-## What should I do about it?
-Please contact Mooer support, to encourage them to prioritize fixing this issue.
