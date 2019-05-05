@@ -2,10 +2,10 @@
 Tone Capture sharing, for Mooer Preamp Live users
 
 ## Features
-* Read `.mo` preset files exported from MPL; support v1.0.0, 1.0.1, and 2.0.0 formats [complete]
-* Read `.mbf` full backup files exported from MPL (available starting with Mooer Studio v2.0.0) [in progress]
-    * Extract individual presets (as `.mo` files) from a full backup file, without restoring the backup to your MPL [in progress]
-        * This could be a workaround for the [bug](https://github.com/jwyse/MPLShare/blob/master/studio-v2-bug.md) that prevents exporting Tone Captures from v2.
+* Read `.mo` preset files exported from MPL (v1.0.0, 1.0.1, and 2.0.0 formats) [complete]
+* Read `.mbf` full backup files exported from MPL (v2.0.0 format) [complete]
+    * Extract individual presets (as `.mo` files) from a full backup file, without restoring the backup to your MPL [complete]
+        * This can be used as a workaround for the [bug](https://github.com/jwyse/MPLShare/blob/master/studio-v2-bug.md) that prevents exporting Tone Captures from v2.
 * Enable users to upload their presets and full backups, with a description of the tone(s) that they captured
     * example: "Marshall JVM410H, CH2 Orange, mids boosted"
     * Submitters and other users can tag presets: `highgain`, `classicrock`, `clean`, etc. [planned]
@@ -45,6 +45,9 @@ Searching presets by preamp model (using Mooer's nickname, or the actual Based-O
 
 Parsing individual presets from full backup (.mbf) files
 ![Full backup](https://github.com/jwyse/MPLShare/raw/master/img/poc-parsed-full-backup.png)
+
+Extract and export individual .mo presets from a full backup (.mbf) file
+![Extract presets](https://github.com/jwyse/MPLShare/raw/master/img/poc-extract-presets-from-backup.png)
 
 ### Disclaimer
 I am not affiliated with Mooer in any way, except that I've purchased a few of their products via normal retail.
