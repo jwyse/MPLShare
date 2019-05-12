@@ -21,7 +21,5 @@ Here's how you can check whether your MPL pedal/software has this issue:
 ## What should I do if I have this issue?
 Please contact Mooer support, to encourage them to prioritize fixing this issue.
 
-## How did you find this issue?
-Immediately after I bought my Preamp Live, I upgraded the software+firmware to v1.0.1 (it shipped with v1.0.0), and then v2.0.0.  I captured the tone of my favorite amp, and exported it.  I tried out a few presets that other users had shared, and eventually did a factory reset and tried to restore my own preset with my tone capture... but there was no tone capture.
-
-I downgraded my software+firmware back to v1.0.0 and confirmed that exported presets do contain tone capture data, as expected.  Then I upgraded to 1.0.1 and confirmed that it still works.  Then I upgraded to 2.0.0 and confirmed the bug again.  Other users have reported the same issue in a Facebook group.
+## Is there a way to export my tone captures?
+Yes. Although exported preset files omit the Tone Capture data, the full backup file does include tone captures.  MPLShare is able to extract individual presets, as `.mo` preset files, from a full backup file (`.mbf`).

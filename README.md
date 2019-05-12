@@ -4,8 +4,9 @@ Tone Capture sharing, for Mooer Preamp Live users
 ## Features
 * Read `.mo` preset files exported from MPL (v1.0.0, 1.0.1, and 2.0.0 formats) [complete]
 * Read `.mbf` full backup files exported from MPL (v2.0.0 format) [complete]
-    * Extract individual presets (as `.mo` files) from a full backup file, without restoring the backup to your MPL [complete]
+    * Extract individual presets (as `.mo` files) from a full backup file, without restoring the backup to your Preamp Live [complete]
         * This can be used as a workaround for the [bug](https://github.com/jwyse/MPLShare/blob/master/studio-v2-bug.md) that prevents exporting Tone Captures from v2.
+* Convert v2.x preset files to v1.x-compatible file format [in progress]
 * Enable users to upload their presets and full backups, with a description of the tone(s) that they captured
     * example: "Marshall JVM410H, CH2 Orange, mids boosted"
     * Submitters and other users can tag presets: `highgain`, `classicrock`, `clean`, etc. [planned]
