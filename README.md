@@ -11,6 +11,7 @@ Tone Capture sharing, for Mooer Preamp Live users
     * example: "Marshall JVM410H, CH2 Orange, mids boosted"
     * Submitters and other users can tag presets: `highgain`, `classicrock`, `clean`, etc. [planned]
     * Users can rate uploaded presets [planned]
+* Users can request specific amp tone captures from other users who have access to those amps. [planned]
 * The database is searchable...
     * by preamp model: using Mooer's nickname, or the amp-based-on name (`gas station` or `diezel`) [complete]
     * by Tone Capture (raw preset parameters vs. presets that include a Tone-Captured amp) [in progress]
