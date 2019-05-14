@@ -37,9 +37,14 @@ planned
 -->
 
 ## Proof of Concept
-Ultimately, this project will be a web application, where users can search for presets or upload their own.  At this stage, I'm focused on the data parsing and storage, and testing that using a console.
 
-Parsing a preset from .mo file
+Display the list of presets available for download
+![preset list](https://github.com/jwyse/MPLShare/raw/master/img/webapp-list.jpg)
+
+Display a single preset
+![preset details](https://github.com/jwyse/MPLShare/raw/master/img/webapp-preset.jpg)
+
+Parsing a preset from .mo file (console application)
 ![display single preset](https://github.com/jwyse/MPLShare/raw/master/img/poc-display-preset.png)
 
 Searching presets by preamp model (using Mooer's nickname, or the actual Based-On name)
